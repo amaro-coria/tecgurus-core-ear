@@ -6,14 +6,26 @@
 		<artifactId>core</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>net.tecgurus</groupId>
 	<artifactId>core-ear</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>ear</packaging>
 	<name>core</name>
 	<description>core-ear</description>
 
 	<dependencies>
+		<dependency>
+			<groupId>net.tecgurus</groupId>
+			<artifactId>core-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.tecgurus</groupId>
+			<artifactId>core-persistence</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
+			<scope>compile</scope>
+		</dependency>
 		<dependency>
 			<groupId>net.tecgurus</groupId>
 			<artifactId>core-ejb</artifactId>
